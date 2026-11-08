@@ -6,46 +6,52 @@
 <title>ゼルダの伝説 時のオカリナ かぞく攻略 | Switch 2版</title>
 <meta name="description" content="Nintendo Switch 2版『ゼルダの伝説 時のオカリナ』を かぞくで すすめるための 攻略ガイド。ファクトチェック済み。">
 <style>
-:root{--bg:#0d1f16;--panel:#173824;--panel2:#1f4a2d;--gold:#e8c766;--ink:#fffdf4;--sub:#cfe0c8;--line:#2f6b42}
+:root{--panel:#ffffff;--panel2:#fff3c9;--gold:#ff9f1c;--ink:#3d4a35;--sub:#71836b;--line:#ffd9a0}
 *{box-sizing:border-box}
 html{font-size:19px}
 html.large{font-size:22px}
-body{margin:0;font-family:"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:2.0;-webkit-text-size-adjust:100%}
-rt{font-size:.52em;color:var(--gold)}
-header{padding:1.6rem 1rem 1rem;text-align:center;background:linear-gradient(180deg,#1d4a2a,#0d1f16)}
-header h1{margin:.2rem 0;font-size:1.5rem;color:var(--gold);line-height:1.5}
+body{margin:0;font-family:"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:linear-gradient(180deg,#fff6da 0%,#ffeef6 34%,#e8fbef 68%,#e6f4ff 100%);background-attachment:fixed;color:var(--ink);line-height:2.0;-webkit-text-size-adjust:100%}
+rt{font-size:.52em;color:#f2790f}
+header{padding:1.4rem 1rem 1.1rem;text-align:center}
+.charas{display:flex;justify-content:center;gap:.35rem;font-size:2.1rem;line-height:1.2}
+.charas span{display:inline-block;animation:bob 2.2s ease-in-out infinite}
+.charas span:nth-child(2){animation-delay:.25s}.charas span:nth-child(3){animation-delay:.5s}.charas span:nth-child(4){animation-delay:.75s}.charas span:nth-child(5){animation-delay:1s}.charas span:nth-child(6){animation-delay:1.25s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+header h1{margin:.3rem 0;font-size:1.5rem;color:#e07b0f;line-height:1.5;text-shadow:0 2px 0 #fff}
 header p{margin:.2rem 0;color:var(--sub);font-size:.85rem;line-height:1.7}
-.sizebtns{display:flex;gap:.5rem;justify-content:center;margin-top:.6rem}
-.sizebtns button,.reset{background:var(--panel2);color:var(--ink);border:2px solid var(--line);border-radius:999px;padding:.55rem 1.1rem;font-size:.95rem;min-height:48px;cursor:pointer}
-nav{position:sticky;top:0;background:#0a1a10f2;display:flex;gap:.45rem;overflow-x:auto;padding:.55rem .5rem;z-index:20;border-bottom:1px solid var(--line);scrollbar-width:none}
-nav a{flex:0 0 auto;color:var(--ink);text-decoration:none;font-size:.9rem;padding:.5rem .8rem;border:1px solid var(--line);border-radius:999px;min-height:44px;display:flex;align-items:center}
+.gems{margin:.6rem auto 0;font-size:.8rem;color:#5b6e54;background:#ffffffb8;border:2px dashed #ffc7dd;border-radius:999px;padding:.35rem .8rem;max-width:520px;line-height:1.8}
+.sizebtns{display:flex;gap:.5rem;justify-content:center;margin-top:.7rem;flex-wrap:wrap}
+.sizebtns button,.reset{background:#fff;color:var(--ink);border:2px solid #ffb3cd;border-radius:999px;padding:.55rem 1.1rem;font-size:.95rem;min-height:48px;cursor:pointer;box-shadow:0 2px 0 #ffd9a0}
+nav{position:sticky;top:0;background:#fffffff0;display:flex;gap:.45rem;overflow-x:auto;padding:.55rem .5rem;z-index:20;border-bottom:2px solid #ffe3ae;scrollbar-width:none}
+nav a{flex:0 0 auto;color:var(--ink);text-decoration:none;font-size:.9rem;padding:.5rem .8rem;border:2px solid #bde8c3;border-radius:999px;min-height:44px;display:flex;align-items:center;background:#f2fff4}
 main{max-width:720px;margin:0 auto;padding:.8rem .8rem 3rem}
 section{margin-top:1.8rem}
-h2{color:var(--gold);font-size:1.25rem;border-bottom:2px solid var(--line);padding-bottom:.3rem;line-height:1.6}
-.nextcard{background:linear-gradient(180deg,#265c36,#173824);border:2px solid var(--gold);border-radius:16px;padding:1rem;margin:.8rem 0}
-.nextcard .lbl{color:var(--gold);font-weight:bold;font-size:.95rem}
-.nextcard .txt{font-size:1.2rem;line-height:1.9;margin:.4rem 0 .8rem}
-.bigbtn{display:block;width:100%;background:var(--gold);color:#20300f;border:none;border-radius:999px;padding:.9rem;font-size:1.15rem;font-weight:bold;min-height:60px;cursor:pointer}
-.bar{height:18px;background:#0a1a10;border-radius:999px;overflow:hidden;border:1px solid var(--line)}
-.bar>div{height:100%;background:linear-gradient(90deg,#4da35f,var(--gold));width:0%;transition:width .3s}
-details.ch{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:.7rem 0;overflow:hidden}
+h2{color:#e07b0f;font-size:1.25rem;border-bottom:3px dotted #ffb3cd;padding-bottom:.3rem;line-height:1.6}
+.nextcard{background:linear-gradient(180deg,#fff3c9,#ffe3f0);border:3px solid #ffb3cd;border-radius:20px;padding:1rem;margin:.8rem 0;box-shadow:0 4px 0 #ffd9a0}
+.nextcard .lbl{color:#e75480;font-weight:bold;font-size:.98rem}
+.nextcard .txt{font-size:1.22rem;line-height:1.9;margin:.4rem 0 .8rem}
+.bigbtn{display:block;width:100%;background:linear-gradient(180deg,#7ed957,#38b24d);color:#fff;border:none;border-radius:999px;padding:.9rem;font-size:1.18rem;font-weight:bold;min-height:60px;cursor:pointer;box-shadow:0 4px 0 #2b8a3e;text-shadow:0 1px 2px #0003}
+.bar{height:18px;background:#fff;border-radius:999px;overflow:hidden;border:2px solid #ffd9a0}
+.bar>div{height:100%;background:linear-gradient(90deg,#7ed957,#ffd93d,#ff9f1c);width:0%;transition:width .3s}
+details.ch{background:var(--panel);border:2px solid #cdeac0;border-radius:18px;margin:.7rem 0;overflow:hidden;box-shadow:0 3px 0 #e5f3da}
+details.ch:nth-of-type(3n){border-color:#ffd0e2}details.ch:nth-of-type(3n+1){border-color:#bfe3ff}
 details.ch summary{list-style:none;cursor:pointer;padding:.9rem 1rem;font-size:1.05rem;font-weight:bold;min-height:56px;display:flex;justify-content:space-between;align-items:center;gap:.5rem}
 details.ch summary::-webkit-details-marker{display:none}
 .chgoal{padding:0 1rem;color:var(--sub);font-size:.9rem;line-height:1.8}
 .steps{padding:.2rem .6rem .8rem}
-label.step{display:flex;gap:.8rem;align-items:flex-start;background:#0f2a18;border:1px solid var(--line);border-radius:12px;padding:.8rem .8rem;margin:.55rem 0;cursor:pointer;min-height:64px}
-label.step input{flex:0 0 auto;width:34px;height:34px;margin-top:.35rem;accent-color:#4da35f}
+label.step{display:flex;gap:.8rem;align-items:flex-start;background:#fffdf5;border:2px solid #ffe3ae;border-radius:14px;padding:.8rem .8rem;margin:.55rem 0;cursor:pointer;min-height:64px}
+label.step input{flex:0 0 auto;width:34px;height:34px;margin-top:.35rem;accent-color:#38b24d}
 label.step span{font-size:1rem;line-height:1.95}
-label.step.done span{color:var(--sub);text-decoration:line-through}
-.pill{flex:0 0 auto;font-size:.75rem;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:.15rem .6rem;color:var(--sub)}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1rem;margin:.7rem 0}
+label.step.done span{color:#a9b8a2;text-decoration:line-through}
+.pill{flex:0 0 auto;font-size:.75rem;background:#fff3c9;border:1px solid #ffd9a0;border-radius:999px;padding:.15rem .6rem;color:#8a6d1f}
+.card{background:var(--panel);border:2px solid #cdeac0;border-radius:18px;padding:1rem;margin:.7rem 0;box-shadow:0 3px 0 #e5f3da}
 .card p,.card li{font-size:.98rem}
-.song{border-bottom:1px solid var(--line);padding:.7rem 0}
+.song{border-bottom:2px dotted #ffd9ec;padding:.7rem 0}
 .song:last-child{border-bottom:none}
 .song .name{font-weight:bold;font-size:1.05rem}
-.song .inp{font-size:1.25rem;letter-spacing:.06em;color:var(--gold);font-weight:bold;line-height:1.8}
+.song .inp{font-size:1.25rem;letter-spacing:.06em;color:#e75480;font-weight:bold;line-height:1.8}
 .song .place{color:var(--sub);font-size:.85rem}
-.boss{border-bottom:1px solid var(--line);padding:.7rem 0}
+.boss{border-bottom:2px dotted #ffd9ec;padding:.7rem 0}
 .boss:last-child{border-bottom:none}
 .boss .name{font-weight:bold;font-size:1.05rem}
 .boss .where{color:var(--sub);font-size:.85rem}
@@ -54,14 +60,15 @@ footer{text-align:center;color:var(--sub);font-size:.8rem;padding:2rem 1rem;line
 </head>
 <body>
 <header>
-<div style="font-size:2.2rem">🗡️</div>
-<h1><ruby>ゼルダの伝説<rt>でんせつ</rt></ruby> 時のオカリナ<br>かぞく<ruby>攻略<rt>こうりゃく</rt></ruby></h1>
-<p>2026年11月5日発売 / Nintendo Switch 2 フルリメイク対応</p>
+<div class="charas"><span>🌳</span><span>🧚</span><span>🗡️</span><span>🐴</span><span>👑</span><span>🎵</span></div>
+<h1><ruby>ゼルダの伝説<rt>でんせつ</rt></ruby> 時のオカリナ<br>かぞく<ruby>攻略<rt>こうりゃく</rt></ruby> ✨</h1>
 <p>かぞく みんなで すすめる おたすけガイド</p>
+<p>🧚 ナビィといっしょに ハイラルを ぼうけんしよう！</p>
+<div class="gems">あつめるもの：🟢 コキリのヒスイ　🔴 ゴロンのルビー　🔵 ゾーラのサファイア　→ メダル 5つ → 👑 ハイラルを すくう！</div>
 <div class="sizebtns"><span style="align-self:center;font-size:.85rem;color:var(--sub)">文字の おおきさ</span><button id="szN" type="button">ふつう</button><button id="szL" type="button">おおきく</button></div>
 </header>
 <nav>
-<a href="#next">🧭 つぎはなに？</a><a href="#diff">⚠️ 新旧ちがい</a><a href="#boss">👑 ボス</a><a href="#songs">🎵 曲</a><a href="#memo">🎁 しらべもの</a>
+<a href="#next">🧭 つぎはなに？</a><a href="#boss">👑 ボス</a><a href="#songs">🎵 曲</a><a href="#memo">🎁 しらべもの</a>
 </nav>
 <main>
 <section id="next">
@@ -85,7 +92,7 @@ footer{text-align:center;color:var(--sub);font-size:.8rem;padding:2rem 1rem;line
 <p class="chgoal">もくひょう：バクダンを 手に 入れよう（こども時代）</p>
 <div class="steps"><label class="step"><input type="checkbox" data-k="s5_1"><span>バクダン花で ヒビの かべを こわして すすむ</span></label><label class="step"><input type="checkbox" data-k="s5_2"><span>2かいの 宝箱から ボム袋（バクダン）を とる</span></label><label class="step"><input type="checkbox" data-k="s5_3"><span>ボス「キングドドンゴ」：口を あけたら バクダンを なげこむ。たおれたら 剣で たたく</span></label></div></details><details class="ch"><summary><span>第6章 大妖精（だいようせい）の泉（いずみ）</span><span class="pill"><span class="chprog"></span></span></summary>
 <p class="chgoal">もくひょう：まほうを おぼえる 寄（よ）り道（みち）（こども時代）</p>
-<div class="steps"><label class="step"><input type="checkbox" data-k="s6_1"><span>山の てっぺんの 泉：25ルピーで「ディンの炎（ほのお）」</span></label><label class="step"><input type="checkbox" data-k="s6_2"><span>ハイラル城の 泉：50ルピーで「回転斬（かいてんぎ）り」</span></label><label class="step"><input type="checkbox" data-k="s6_3"><span>※64版と じゅんばんが ぎゃくに なっているよ</span></label></div></details><details class="ch"><summary><span>第7章 ゾーラの里</span><span class="pill"><span class="chprog"></span></span></summary>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s6_1"><span>山の てっぺんの 泉：25ルピーで「ディンの炎（ほのお）」</span></label><label class="step"><input type="checkbox" data-k="s6_2"><span>ハイラル城の 泉：50ルピーで「回転斬（かいてんぎ）り」</span></label></div></details><details class="ch"><summary><span>第7章 ゾーラの里</span><span class="pill"><span class="chprog"></span></span></summary>
 <p class="chgoal">もくひょう：ジャブジャブ様の おなかへ 行く じゅんび（こども時代）</p>
 <div class="steps"><label class="step"><input type="checkbox" data-k="s7_1"><span>せんすいゲームで ウロコを 5まい ひろうと「銀（ぎん）のウロコ」が もらえる</span></label><label class="step"><input type="checkbox" data-k="s7_2"><span>ハイリア湖（こ）で 手紙の 入った ビンを ひろう</span></label><label class="step"><input type="checkbox" data-k="s7_3"><span>キングゾーラに 手紙を みせると みちが ひらく</span></label><label class="step"><input type="checkbox" data-k="s7_4"><span>サカナを ビンに 入れて ジャブジャブ様の まえへ</span></label></div></details><details class="ch"><summary><span>第8章 ジャブジャブ様の お腹（なか）</span><span class="pill"><span class="chprog"></span></span></summary>
 <p class="chgoal">もくひょう：ブーメランを 手に 入れよう（こども時代）</p>
@@ -106,22 +113,6 @@ footer{text-align:center;color:var(--sub);font-size:.8rem;padding:2rem 1rem;line
 <div class="steps"><label class="step"><input type="checkbox" data-k="s15_1"><span>こども側：アイアンナックを たおして「銀のグローブ」を とる</span></label><label class="step"><input type="checkbox" data-k="s15_2"><span>おとな側：アイアンナック戦の 先で「ミラーシールド（かがみの盾）」を とる</span></label><label class="step"><input type="checkbox" data-k="s15_3"><span>ボス「ツインローバ」：炎は 氷の まじょへ、氷は 炎の まじょへ かがみで はねかえす。合体したら 同じ 色を 3回 ためて かえし、おちたら 剣。光の矢は つかわない</span></label></div></details><details class="ch"><summary><span>第16章 ガノン城・さいごの たたかい</span><span class="pill"><span class="chprog"></span></span></summary>
 <p class="chgoal">もくひょう：ハイラルを すくおう！（おとな時代）</p>
 <div class="steps"><label class="step"><input type="checkbox" data-k="s16_1"><span>時の神殿で「光（ひかり）の矢」を もらう</span></label><label class="step"><input type="checkbox" data-k="s16_2"><span>城の 中の 闇の結界（けっかい）で「黄金（おうごん）のガントレット」を とる</span></label><label class="step"><input type="checkbox" data-k="s16_3"><span>ガノンドロフ：光の玉を 剣で はねかえす。しびれたら 光の矢→剣</span></label><label class="step"><input type="checkbox" data-k="s16_4"><span>ガノン：しっぽが 弱点（じゃくてん）。マスターソードを ひろって さいごの 一撃（いちげき）！</span></label></div></details><button class="reset" id="reset" type="button">チェックを 全部 リセット</button></section>
-<section id="diff">
-<h2>⚠️ 新旧（しんきゅう）ちがい</h2>
-<div class="card"><p>むかしの 64版・3DS版と まざらないように ちゅうい！</p><ul>
-<li>ジャンプは <b>Xボタン</b>で 自分で とぶ（自動ジャンプは ない）</li>
-<li>前転（ぜんてん）してから <b>Aボタン長押し</b>で ダッシュ</li>
-<li>カメラは 右スティックで じゆうに まわせる</li>
-<li>「時の軌跡（きせき）」で つぎの 行き先が わかる</li>
-<li>ボスと また たたかえる「万魔殿（まんまでん）」が ある</li>
-<li>さいしょの サイフは 200ルピーまで もてる</li>
-<li>大妖精の泉は ルピーが いる。もらえる じゅんばんも 入れかわっている</li>
-<li>あきビンは 5個に ふえた。ビッグポウは 5体で ビンと こうかん</li>
-<li>ゾーラの せんすいゲームは ルピーじゃなく ウロコ 5まい ひろい</li>
-<li>夜でも 城下町に 入れる</li>
-</ul></div>
-</section>
-
 <section id="boss">
 <h2>👑 ボス早見表（はやみひょう）</h2>
 <div class="card"><div class="boss"><div class="name">ゴーマ</div><div class="where">デクの樹サマの 中</div><div>目が あかく なったら パチンコで うつ。おちたら 剣</div></div><div class="boss"><div class="name">キングドドンゴ</div><div class="where">ドドンゴの洞窟</div><div>口を あけたら バクダン。たおれたら 剣</div></div><div class="boss"><div class="name">バリネード</div><div class="where">ジャブジャブ様の お腹</div><div>ブーメランで とめて 剣</div></div><div class="boss"><div class="name">ファントムガノン</div><div class="where">森の神殿</div><div>絵から 出る 本物を 弓で。まほう玉は 剣で はねかえす</div></div><div class="boss"><div class="name">ヴァルバジア</div><div class="where">炎の神殿</div><div>あたまを ハンマーで たたいて 剣</div></div><div class="boss"><div class="name">モーファ</div><div class="where">水の神殿</div><div>ロングフックで 赤い核を 出して 剣</div></div><div class="boss"><div class="name">ボンゴボンゴ</div><div class="where">闇の神殿</div><div>手を 弓で しびれさせ、メガネで 目を うって 剣</div></div><div class="boss"><div class="name">ツインローバ</div><div class="where">魂の神殿</div><div>炎と氷を かがみで 相手に かえす。合体後は 同じ色を3回ためる</div></div><div class="boss"><div class="name">ガノンドロフ／ガノン</div><div class="where">ガノン城</div><div>光の玉を はねかえして 光の矢→剣。ガノンは しっぽが 弱点</div></div>
