@@ -4,181 +4,202 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ゼルダの伝説 時のオカリナ かぞく攻略 | Switch 2版</title>
-<meta name="description" content="Nintendo Switch 2版『ゼルダの伝説 時のオカリナ』を家族で進めるための攻略ガイド。ファクトチェック済み。">
+<meta name="description" content="Nintendo Switch 2版『ゼルダの伝説 時のオカリナ』を かぞくで すすめるための 攻略ガイド。ファクトチェック済み。">
 <style>
-:root{--bg:#0d1f16;--panel:#14301f;--panel2:#1a3d27;--gold:#e8c766;--ink:#f2ead8;--sub:#b9c9b4;--accent:#7fc97f;--line:#2c5a3a}
+:root{--bg:#0d1f16;--panel:#173824;--panel2:#1f4a2d;--gold:#e8c766;--ink:#fffdf4;--sub:#cfe0c8;--line:#2f6b42}
 *{box-sizing:border-box}
-body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
-header{padding:2.2rem 1rem 1.4rem;text-align:center;background:linear-gradient(180deg,#1d4a2a,#0d1f16)}
-header h1{margin:.2rem 0;font-size:1.55rem;color:var(--gold);letter-spacing:.02em}
-header p{margin:.3rem 0;color:var(--sub);font-size:.92rem}
-nav{position:sticky;top:0;background:#0a1a10ee;display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;padding:.55rem .5rem;z-index:10;border-bottom:1px solid var(--line)}
-nav a{color:var(--ink);text-decoration:none;font-size:.85rem;padding:.3rem .7rem;border:1px solid var(--line);border-radius:999px}
-nav a:hover{background:var(--panel2)}
-main{max-width:860px;margin:0 auto;padding:1rem 1rem 3rem}
-section{margin-top:2rem}
-h2{color:var(--gold);font-size:1.2rem;border-bottom:2px solid var(--line);padding-bottom:.3rem}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;margin:.7rem 0}
-.card h3{margin:.1rem 0 .4rem;font-size:1rem}
-.card p,.card li{font-size:.93rem}
-.tag{display:inline-block;font-size:.72rem;padding:.05rem .5rem;border-radius:999px;background:var(--panel2);color:var(--accent);border:1px solid var(--line);margin-right:.35rem}
-.progress-wrap{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem}
-.bar{height:14px;background:#0a1a10;border-radius:999px;overflow:hidden;border:1px solid var(--line)}
+html{font-size:19px}
+html.large{font-size:22px}
+body{margin:0;font-family:"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:2.0;-webkit-text-size-adjust:100%}
+rt{font-size:.52em;color:var(--gold)}
+header{padding:1.6rem 1rem 1rem;text-align:center;background:linear-gradient(180deg,#1d4a2a,#0d1f16)}
+header h1{margin:.2rem 0;font-size:1.5rem;color:var(--gold);line-height:1.5}
+header p{margin:.2rem 0;color:var(--sub);font-size:.85rem;line-height:1.7}
+.sizebtns{display:flex;gap:.5rem;justify-content:center;margin-top:.6rem}
+.sizebtns button,.reset{background:var(--panel2);color:var(--ink);border:2px solid var(--line);border-radius:999px;padding:.55rem 1.1rem;font-size:.95rem;min-height:48px;cursor:pointer}
+nav{position:sticky;top:0;background:#0a1a10f2;display:flex;gap:.45rem;overflow-x:auto;padding:.55rem .5rem;z-index:20;border-bottom:1px solid var(--line);scrollbar-width:none}
+nav a{flex:0 0 auto;color:var(--ink);text-decoration:none;font-size:.9rem;padding:.5rem .8rem;border:1px solid var(--line);border-radius:999px;min-height:44px;display:flex;align-items:center}
+main{max-width:720px;margin:0 auto;padding:.8rem .8rem 3rem}
+section{margin-top:1.8rem}
+h2{color:var(--gold);font-size:1.25rem;border-bottom:2px solid var(--line);padding-bottom:.3rem;line-height:1.6}
+.nextcard{background:linear-gradient(180deg,#265c36,#173824);border:2px solid var(--gold);border-radius:16px;padding:1rem;margin:.8rem 0}
+.nextcard .lbl{color:var(--gold);font-weight:bold;font-size:.95rem}
+.nextcard .txt{font-size:1.2rem;line-height:1.9;margin:.4rem 0 .8rem}
+.bigbtn{display:block;width:100%;background:var(--gold);color:#20300f;border:none;border-radius:999px;padding:.9rem;font-size:1.15rem;font-weight:bold;min-height:60px;cursor:pointer}
+.bar{height:18px;background:#0a1a10;border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .bar>div{height:100%;background:linear-gradient(90deg,#4da35f,var(--gold));width:0%;transition:width .3s}
-label.step{display:flex;gap:.6rem;align-items:flex-start;padding:.35rem 0;cursor:pointer;font-size:.95rem}
-label.step input{margin-top:.35rem;width:1.05rem;height:1.05rem;accent-color:#4da35f}
+details.ch{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:.7rem 0;overflow:hidden}
+details.ch summary{list-style:none;cursor:pointer;padding:.9rem 1rem;font-size:1.05rem;font-weight:bold;min-height:56px;display:flex;justify-content:space-between;align-items:center;gap:.5rem}
+details.ch summary::-webkit-details-marker{display:none}
+.chgoal{padding:0 1rem;color:var(--sub);font-size:.9rem;line-height:1.8}
+.steps{padding:.2rem .6rem .8rem}
+label.step{display:flex;gap:.8rem;align-items:flex-start;background:#0f2a18;border:1px solid var(--line);border-radius:12px;padding:.8rem .8rem;margin:.55rem 0;cursor:pointer;min-height:64px}
+label.step input{flex:0 0 auto;width:34px;height:34px;margin-top:.35rem;accent-color:#4da35f}
+label.step span{font-size:1rem;line-height:1.95}
 label.step.done span{color:var(--sub);text-decoration:line-through}
-table{width:100%;border-collapse:collapse;font-size:.9rem}
-th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
-th{background:var(--panel2);color:var(--gold)}
-.note{font-size:.85rem;color:var(--sub)}
-button.reset{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:.4rem .9rem;cursor:pointer}
-footer{text-align:center;color:var(--sub);font-size:.8rem;padding:2rem 1rem}
+.pill{flex:0 0 auto;font-size:.75rem;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:.15rem .6rem;color:var(--sub)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1rem;margin:.7rem 0}
+.card p,.card li{font-size:.98rem}
+.song{border-bottom:1px solid var(--line);padding:.7rem 0}
+.song:last-child{border-bottom:none}
+.song .name{font-weight:bold;font-size:1.05rem}
+.song .inp{font-size:1.25rem;letter-spacing:.06em;color:var(--gold);font-weight:bold;line-height:1.8}
+.song .place{color:var(--sub);font-size:.85rem}
+.boss{border-bottom:1px solid var(--line);padding:.7rem 0}
+.boss:last-child{border-bottom:none}
+.boss .name{font-weight:bold;font-size:1.05rem}
+.boss .where{color:var(--sub);font-size:.85rem}
+footer{text-align:center;color:var(--sub);font-size:.8rem;padding:2rem 1rem;line-height:1.8}
 </style>
 </head>
 <body>
 <header>
-<div style="font-size:2rem">🗡️</div>
-<h1>ゼルダの伝説 時のオカリナ かぞく攻略</h1>
+<div style="font-size:2.2rem">🗡️</div>
+<h1><ruby>ゼルダの伝説<rt>でんせつ</rt></ruby> 時のオカリナ<br>かぞく<ruby>攻略<rt>こうりゃく</rt></ruby></h1>
 <p>2026年11月5日発売 / Nintendo Switch 2 フルリメイク対応</p>
-<p>かぞくみんなで進める おたすけガイド（ファクトチェック済み）</p>
+<p>かぞく みんなで すすめる おたすけガイド</p>
+<div class="sizebtns"><span style="align-self:center;font-size:.85rem;color:var(--sub)">文字の おおきさ</span><button id="szN" type="button">ふつう</button><button id="szL" type="button">おおきく</button></div>
 </header>
 <nav>
-<a href="#next">🧭 つぎはなに？</a>
-<a href="#diff">⚠️ 新旧ちがい</a>
-<a href="#boss">👑 ボス</a>
-<a href="#songs">🎵 曲・ボタン</a>
-<a href="#memo">🎁 しらべもの</a>
+<a href="#next">🧭 つぎはなに？</a><a href="#diff">⚠️ 新旧ちがい</a><a href="#boss">👑 ボス</a><a href="#songs">🎵 曲</a><a href="#memo">🎁 しらべもの</a>
 </nav>
 <main>
-
 <section id="next">
-<h2>🧭 つぎはなに？（進みぐあいチェック）</h2>
-<div class="progress-wrap">
-<div style="display:flex;justify-content:space-between;font-size:.9rem"><span>ぼうけん全体の進みぐあい</span><span id="pct">0 / 16 クリア（0%）</span></div>
+<h2>🧭 つぎは なに？</h2>
+<div class="nextcard">
+<div class="lbl">🎯 つぎは コレを やろう！</div>
+<div class="txt" id="nexttxt"></div>
+<button class="bigbtn" id="nextbtn" type="button">✅ できた！（つぎへ すすむ）</button>
+<div style="margin-top:.9rem;display:flex;justify-content:space-between;font-size:.88rem"><span>ぼうけん全体の 進みぐあい</span><span id="pct"></span></div>
 <div class="bar"><div id="barfill"></div></div>
-<p class="note">チェックはこのブラウザに保存されます。精霊石3つ（こども時代）→ メダル5つ（おとな時代）→ ガノン城が大まかな流れです。詰まったら −ボタンで「時の軌跡」を確認しましょう。</p>
 </div>
-
-<div class="card"><h3>🌱 こども時代</h3>
-<label class="step"><input type="checkbox" data-k="c1"><span><b>1. コキリの森</b> — 練習場の奥でコキリの剣を取り、40ルピー集めてデクの盾を買う。ミドを通ってデクの樹サマへ</span></label>
-<label class="step"><input type="checkbox" data-k="c2"><span><b>2. デクの樹サマの中</b> — 妖精のパチンコを入手。デクナッツは盾ではね返して出てきたところを剣で斬る。ボス：ゴーマ</span></label>
-<label class="step"><input type="checkbox" data-k="c3"><span><b>3. ハイラル城</b> — マロンのタマゴでタロンを起こし、兵士を避けてゼルダ姫から手紙をもらう。インパが子守歌を教えて城の外へ連れ出してくれる</span></label>
-<label class="step"><input type="checkbox" data-k="c4"><span><b>4. ゴロンシティ〜迷いの森</b> — 門番に手紙を見せてデスマウンテンへ。森の聖域でサリアの歌を覚える（入口でルートが違うので音の大きさが目安）</span></label>
-<label class="step"><input type="checkbox" data-k="c5"><span><b>5. ドドンゴの洞窟</b> — ボム袋を入手。ボス：キングドドンゴ。通常のドドンゴもバクダンを吸わせて倒せる</span></label>
-<label class="step"><input type="checkbox" data-k="c6"><span><b>6. 大妖精の泉（寄り道）</b> — 山頂でディンの炎（25ルピー）、ハイラル城で回転斬り（50ルピー）。64版と順番が逆</span></label>
-<label class="step"><input type="checkbox" data-k="c7"><span><b>7. ゾーラの里</b> — 潜水ゲームでウロコ5枚を拾うと銀のウロコ。湖畔の手紙入りビンを王様に見せ、サカナをビンに入れてジャブジャブ様へ</span></label>
-<label class="step"><input type="checkbox" data-k="c8"><span><b>8. ジャブジャブ様のお腹</b> — ブーメランを入手。ボス：バリネード</span></label>
-<label class="step"><input type="checkbox" data-k="c9"><span><b>9. 時のオカリナ〜おとな時代へ</b> — 城門前で時のオカリナを拾って時の歌を覚え、時の神殿でマスターソードを抜く</span></label>
-</div>
-
-<div class="card"><h3>⚔️ おとな時代</h3>
-<label class="step"><input type="checkbox" data-k="a1"><span><b>10. 森の神殿</b> — 墓地でフックショット、牧場でエポナ、森の聖域でメヌエット。ボス：ファントムガノン。クリア後はベッドから万魔殿へ行ける</span></label>
-<label class="step"><input type="checkbox" data-k="a2"><span><b>11. 炎の神殿</b> — 火口でボレロ。メガトンハンマーを入手。ボス：ヴァルバジア</span></label>
-<label class="step"><input type="checkbox" data-k="a3"><span><b>12. 氷の洞窟〜水の神殿</b> — ヘビィブーツと水のセレナーデ。水位の切り替えが鍵。ボス：モーファ</span></label>
-<label class="step"><input type="checkbox" data-k="a4"><span><b>13. 井戸の底〜闇の神殿</b> — こども時代にまことのメガネを入手し、カカリコ村でノクターンを覚える。ボス：ボンゴボンゴ</span></label>
-<label class="step"><input type="checkbox" data-k="a5"><span><b>14. ゲルドの砦〜魂の神殿の準備</b> — 砦で会員証をもらい、幻影の砂漠を越える。巨大邪神像で魂のレクイエムを覚え、こども時代に戻る</span></label>
-<label class="step"><input type="checkbox" data-k="a6"><span><b>15. 魂の神殿</b> — こども側で銀のグローブ、大人側でミラーシールド（どちらも神殿の中）。ボス：ツインローバ</span></label>
-<label class="step"><input type="checkbox" data-k="a7"><span><b>16. ガノン城・最終決戦</b> — 光の矢を受け取り、城内の闇の結界で黄金のガントレットを入手。ガノンドロフ→ガノンを倒してエンディングへ</span></label>
-</div>
-<button class="reset" id="reset">チェックを全部リセット</button>
-</section>
-
+<p style="font-weight:bold;color:var(--gold);margin-top:1.2rem">🌱 こども時代</p><details class="ch"><summary><span>第1章 コキリの森</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：剣（けん）と 盾（たて）を そろえよう（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s1_1"><span>れんしゅう場の おくの あなを くぐって、宝箱（たからばこ）から コキリの剣を とる</span></label><label class="step"><input type="checkbox" data-k="s1_2"><span>いえの 宝箱や いわで 40ルピーを あつめる</span></label><label class="step"><input type="checkbox" data-k="s1_3"><span>おみせで デクの盾を かう（40ルピー）</span></label><label class="step"><input type="checkbox" data-k="s1_4"><span>ひがしの みちで ミドに はなして、デクの樹（き）サマの まえへ いく</span></label></div></details><details class="ch"><summary><span>第2章 デクの樹サマの 中</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：パチンコを 手に 入れて ボスを たおそう（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s2_1"><span>つたを のぼって マップを とる</span></label><label class="step"><input type="checkbox" data-k="s2_2"><span>おくの へやで 妖精（ようせい）のパチンコを とる</span></label><label class="step"><input type="checkbox" data-k="s2_3"><span>3かいから 1かい まんなかの クモの巣（す）へ とびおりる</span></label><label class="step"><input type="checkbox" data-k="s2_4"><span>デクの棒（ぼう）に 火を つけて すすむ</span></label><label class="step"><input type="checkbox" data-k="s2_5"><span>ボス「ゴーマ」：目が あかく なったら パチンコで うつ。おちてきたら 剣で たたく</span></label></div></details><details class="ch"><summary><span>第3章 ハイラル城</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：ゼルダ姫（ひめ）に あいに いこう（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s3_1"><span>城下町（じょうかまち）の そとで マロンから ふしぎなタマゴを もらう</span></label><label class="step"><input type="checkbox" data-k="s3_2"><span>ねている タロンを ニワトリで おこして 城（しろ）の 中へ</span></label><label class="step"><input type="checkbox" data-k="s3_3"><span>へいしに みつからないように すすんで、ゼルダ姫に あう</span></label><label class="step"><input type="checkbox" data-k="s3_4"><span>ゼルダの手紙（てがみ）を もらう</span></label><label class="step"><input type="checkbox" data-k="s3_5"><span>インパに ゼルダの子守歌（こうた）を おそわる。城の そとまで つれていって くれる</span></label></div></details><details class="ch"><summary><span>第4章 ゴロンシティと 迷（まよ）いの森</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：サリアの歌を おぼえよう（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s4_1"><span>カカリコ村の もんばんに 手紙を みせて 山へ いく</span></label><label class="step"><input type="checkbox" data-k="s4_2"><span>ゴロンシティに ついたら、まず 迷いの森へ むかう</span></label><label class="step"><input type="checkbox" data-k="s4_3"><span>森の おく「森の聖域（せいいき）」で サリアの歌を おぼえる（音が おおきく きこえる ほうが せいかい）</span></label><label class="step"><input type="checkbox" data-k="s4_4"><span>ゴロンシティに もどって ダルニアに サリアの歌を きかせる</span></label></div></details><details class="ch"><summary><span>第5章 ドドンゴの洞窟（どうくつ）</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：バクダンを 手に 入れよう（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s5_1"><span>バクダン花で ヒビの かべを こわして すすむ</span></label><label class="step"><input type="checkbox" data-k="s5_2"><span>2かいの 宝箱から ボム袋（バクダン）を とる</span></label><label class="step"><input type="checkbox" data-k="s5_3"><span>ボス「キングドドンゴ」：口を あけたら バクダンを なげこむ。たおれたら 剣で たたく</span></label></div></details><details class="ch"><summary><span>第6章 大妖精（だいようせい）の泉（いずみ）</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：まほうを おぼえる 寄（よ）り道（みち）（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s6_1"><span>山の てっぺんの 泉：25ルピーで「ディンの炎（ほのお）」</span></label><label class="step"><input type="checkbox" data-k="s6_2"><span>ハイラル城の 泉：50ルピーで「回転斬（かいてんぎ）り」</span></label><label class="step"><input type="checkbox" data-k="s6_3"><span>※64版と じゅんばんが ぎゃくに なっているよ</span></label></div></details><details class="ch"><summary><span>第7章 ゾーラの里</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：ジャブジャブ様の おなかへ 行く じゅんび（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s7_1"><span>せんすいゲームで ウロコを 5まい ひろうと「銀（ぎん）のウロコ」が もらえる</span></label><label class="step"><input type="checkbox" data-k="s7_2"><span>ハイリア湖（こ）で 手紙の 入った ビンを ひろう</span></label><label class="step"><input type="checkbox" data-k="s7_3"><span>キングゾーラに 手紙を みせると みちが ひらく</span></label><label class="step"><input type="checkbox" data-k="s7_4"><span>サカナを ビンに 入れて ジャブジャブ様の まえへ</span></label></div></details><details class="ch"><summary><span>第8章 ジャブジャブ様の お腹（なか）</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：ブーメランを 手に 入れよう（こども時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s8_1"><span>ルート姫の あとを ついていく</span></label><label class="step"><input type="checkbox" data-k="s8_2"><span>小部屋の 宝箱から ブーメランを とる</span></label><label class="step"><input type="checkbox" data-k="s8_3"><span>ボス「バリネード」：ブーメランで とめてから 剣で たたく</span></label></div></details><details class="ch"><summary><span>第9章 時のオカリナと 7年後（ねんご）</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：おとなに なって ハイラルを すくおう（こども→おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s9_1"><span>城門（じょうもん）の まえで 時のオカリナを ひろって「時の歌」を おぼえる</span></label><label class="step"><input type="checkbox" data-k="s9_2"><span>時の神殿（しんでん）で マスターソードを ぬく</span></label><label class="step"><input type="checkbox" data-k="s9_3"><span>7年後の 世界へ！</span></label></div></details><p style="font-weight:bold;color:var(--gold);margin-top:1.2rem">⚔️ おとな時代</p><details class="ch"><summary><span>第10章 森の神殿</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：さいしょの メダルを 手に 入れよう（おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s10_1"><span>おはかで フックショットを とる（ダンペイレース）</span></label><label class="step"><input type="checkbox" data-k="s10_2"><span>ロンロン牧場（ぼくじょう）で エポナを 手に 入れる</span></label><label class="step"><input type="checkbox" data-k="s10_3"><span>迷いの森の おくで「森のメヌエット」を おぼえる</span></label><label class="step"><input type="checkbox" data-k="s10_4"><span>森の神殿で 妖精の弓（ゆみ）を とる</span></label><label class="step"><input type="checkbox" data-k="s10_5"><span>ボス「ファントムガノン」：絵から 出る 本物を 弓で うつ。あとは まほう玉を 剣で はねかえす</span></label><label class="step"><input type="checkbox" data-k="s10_6"><span>クリア後は ベッドで ねると 万魔殿（まんまでん）で ボスと また たたかえる</span></label></div></details><details class="ch"><summary><span>第11章 炎（ほのお）の神殿</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：ハンマーを 手に 入れよう（おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s11_1"><span>火口（かこう）で「炎のボレロ」を おぼえる</span></label><label class="step"><input type="checkbox" data-k="s11_2"><span>メガトンハンマーを とる</span></label><label class="step"><input type="checkbox" data-k="s11_3"><span>ボス「ヴァルバジア」：あたまを ハンマーで たたいて 剣で たたく</span></label></div></details><details class="ch"><summary><span>第12章 氷（こおり）の洞窟（どうくつ）と 水の神殿</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：水の メダルを さがそう（おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s12_1"><span>氷の洞窟で ヘビィブーツを とる</span></label><label class="step"><input type="checkbox" data-k="s12_2"><span>「水のセレナーデ」を おぼえる</span></label><label class="step"><input type="checkbox" data-k="s12_3"><span>水の神殿は 水の 高さを かえるのが カギ。中ボス「ダークリンク」には ハンマーが きく</span></label><label class="step"><input type="checkbox" data-k="s12_4"><span>ボス「モーファ」：ロングフックで 赤い 核（かく）を ひっぱり出して 剣で たたく</span></label></div></details><details class="ch"><summary><span>第13章 井戸（いど）の底（そこ）と 闇（やみ）の神殿</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：見えない ものが 見える メガネ（おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s13_1"><span>こども 時代に もどって、井戸の底で「まことのメガネ」を とる</span></label><label class="step"><input type="checkbox" data-k="s13_2"><span>おとなの カカリコ村で「闇のノクターン」を おぼえる</span></label><label class="step"><input type="checkbox" data-k="s13_3"><span>ボス「ボンゴボンゴ」：りょう手を 弓で しびれさせ、メガネで 目を みて 弓で うつ。おちたら 剣</span></label></div></details><details class="ch"><summary><span>第14章 ゲルドの砦（とりで）と 砂漠（さばく）</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：魂（たましい）の神殿への みち（おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s14_1"><span>ゲルドの砦で 大工さん 4人を たすけて 会員証（かいいんしょう）を もらう</span></label><label class="step"><input type="checkbox" data-k="s14_2"><span>幻影（げんえい）の砂漠は 案内人（あんないにん）に ついていく</span></label><label class="step"><input type="checkbox" data-k="s14_3"><span>巨大邪神像（きょだいじゃしんぞう）で「魂のレクイエム」を おぼえる</span></label><label class="step"><input type="checkbox" data-k="s14_4"><span>こども 時代に もどって 魂の神殿に 入る</span></label></div></details><details class="ch"><summary><span>第15章 魂の神殿</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：かがみの 盾を 手に 入れよう（おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s15_1"><span>こども側：アイアンナックを たおして「銀のグローブ」を とる</span></label><label class="step"><input type="checkbox" data-k="s15_2"><span>おとな側：アイアンナック戦の 先で「ミラーシールド（かがみの盾）」を とる</span></label><label class="step"><input type="checkbox" data-k="s15_3"><span>ボス「ツインローバ」：炎は 氷の まじょへ、氷は 炎の まじょへ かがみで はねかえす。合体したら 同じ 色を 3回 ためて かえし、おちたら 剣。光の矢は つかわない</span></label></div></details><details class="ch"><summary><span>第16章 ガノン城・さいごの たたかい</span><span class="pill"><span class="chprog"></span></span></summary>
+<p class="chgoal">もくひょう：ハイラルを すくおう！（おとな時代）</p>
+<div class="steps"><label class="step"><input type="checkbox" data-k="s16_1"><span>時の神殿で「光（ひかり）の矢」を もらう</span></label><label class="step"><input type="checkbox" data-k="s16_2"><span>城の 中の 闇の結界（けっかい）で「黄金（おうごん）のガントレット」を とる</span></label><label class="step"><input type="checkbox" data-k="s16_3"><span>ガノンドロフ：光の玉を 剣で はねかえす。しびれたら 光の矢→剣</span></label><label class="step"><input type="checkbox" data-k="s16_4"><span>ガノン：しっぽが 弱点（じゃくてん）。マスターソードを ひろって さいごの 一撃（いちげき）！</span></label></div></details><button class="reset" id="reset" type="button">チェックを 全部 リセット</button></section>
 <section id="diff">
-<h2>⚠️ 新旧ちがい（64版・3DS版と混ざらないように）</h2>
-<div class="card"><ul>
-<li><b>ジャンプはXボタンで手動</b>（自動ジャンプ廃止）。前転からA長押しでダッシュ</li>
-<li>カメラは右スティックで自由に回せる。ブーツやメガネはメニューを開かず切り替え可能</li>
-<li>新要素：時の軌跡（目的地確認）、万魔殿（ボス再戦）、アキンドナッツの実、ひびき石</li>
-<li>最初のサイフは200ルピーまで持てる</li>
-<li>大妖精の泉はルピー支払い制で、もらえる順番も入れ替わりあり（ディンの炎が先）</li>
-<li>あきビンは5個に増加。ビッグポウは5体でビンと交換</li>
-<li>ゾーラの潜水ゲームはルピー拾いではなくウロコ5枚拾い</li>
-<li>夜でもハイラル城下町に入れて、町の中でも時間が流れる</li>
-<li>イベントシーンはフルボイス。オカリナはSwitch 2のマイクで鼻歌でも演奏できる</li>
+<h2>⚠️ 新旧（しんきゅう）ちがい</h2>
+<div class="card"><p>むかしの 64版・3DS版と まざらないように ちゅうい！</p><ul>
+<li>ジャンプは <b>Xボタン</b>で 自分で とぶ（自動ジャンプは ない）</li>
+<li>前転（ぜんてん）してから <b>Aボタン長押し</b>で ダッシュ</li>
+<li>カメラは 右スティックで じゆうに まわせる</li>
+<li>「時の軌跡（きせき）」で つぎの 行き先が わかる</li>
+<li>ボスと また たたかえる「万魔殿（まんまでん）」が ある</li>
+<li>さいしょの サイフは 200ルピーまで もてる</li>
+<li>大妖精の泉は ルピーが いる。もらえる じゅんばんも 入れかわっている</li>
+<li>あきビンは 5個に ふえた。ビッグポウは 5体で ビンと こうかん</li>
+<li>ゾーラの せんすいゲームは ルピーじゃなく ウロコ 5まい ひろい</li>
+<li>夜でも 城下町に 入れる</li>
 </ul></div>
 </section>
 
 <section id="boss">
-<h2>👑 ボス早見表</h2>
-<div class="card"><table>
-<tr><th>ボス</th><th>場所</th><th>倒し方のコツ</th></tr>
-<tr><td>ゴーマ</td><td>デクの樹サマの中</td><td>目が赤くなったらパチンコで落として剣</td></tr>
-<tr><td>キングドドンゴ</td><td>ドドンゴの洞窟</td><td>口を開けたらバクダンを投げ入れて剣</td></tr>
-<tr><td>バリネード</td><td>ジャブジャブ様のお腹</td><td>ブーメランで触手とクラゲを処理し、本体をしびれさせて剣</td></tr>
-<tr><td>ファントムガノン</td><td>森の神殿</td><td>絵から出る本物を弓で。後半は魔法玉を剣で打ち返す</td></tr>
-<tr><td>ヴァルバジア</td><td>炎の神殿</td><td>顔をハンマーで叩いて剣</td></tr>
-<tr><td>モーファ</td><td>水の神殿</td><td>ロングフックで赤い核を引き出して剣</td></tr>
-<tr><td>ボンゴボンゴ</td><td>闇の神殿</td><td>両手を弓でしびれさせ、まことのメガネで目を撃って剣</td></tr>
-<tr><td>ツインローバ</td><td>魂の神殿</td><td>前半は炎と氷を相手同士に反射。後半は同じ属性を3回盾で吸収して返し、落ちたら剣（光の矢は使わない）</td></tr>
-<tr><td>ガノンドロフ／ガノン</td><td>ガノン城</td><td>光の玉を打ち返し、しびれたら光の矢→剣。変身後はしっぽが弱点、最後はマスターソード</td></tr>
-</table>
-<p class="note">中ボスの要点：ダークリンクにはハンマーやディンの炎。アイアンナックは斧を振らせて避け、隙にジャンプ斬り。</p></div>
+<h2>👑 ボス早見表（はやみひょう）</h2>
+<div class="card"><div class="boss"><div class="name">ゴーマ</div><div class="where">デクの樹サマの 中</div><div>目が あかく なったら パチンコで うつ。おちたら 剣</div></div><div class="boss"><div class="name">キングドドンゴ</div><div class="where">ドドンゴの洞窟</div><div>口を あけたら バクダン。たおれたら 剣</div></div><div class="boss"><div class="name">バリネード</div><div class="where">ジャブジャブ様の お腹</div><div>ブーメランで とめて 剣</div></div><div class="boss"><div class="name">ファントムガノン</div><div class="where">森の神殿</div><div>絵から 出る 本物を 弓で。まほう玉は 剣で はねかえす</div></div><div class="boss"><div class="name">ヴァルバジア</div><div class="where">炎の神殿</div><div>あたまを ハンマーで たたいて 剣</div></div><div class="boss"><div class="name">モーファ</div><div class="where">水の神殿</div><div>ロングフックで 赤い核を 出して 剣</div></div><div class="boss"><div class="name">ボンゴボンゴ</div><div class="where">闇の神殿</div><div>手を 弓で しびれさせ、メガネで 目を うって 剣</div></div><div class="boss"><div class="name">ツインローバ</div><div class="where">魂の神殿</div><div>炎と氷を かがみで 相手に かえす。合体後は 同じ色を3回ためる</div></div><div class="boss"><div class="name">ガノンドロフ／ガノン</div><div class="where">ガノン城</div><div>光の玉を はねかえして 光の矢→剣。ガノンは しっぽが 弱点</div></div>
+<p style="color:var(--sub);font-size:.88rem">中ボスのコツ：ダークリンクには ハンマー。アイアンナックは オノを ふらせて よけ、すきに ジャンプ斬り。</p></div>
 </section>
 
 <section id="songs">
-<h2>🎵 オカリナの曲（Switch 2版の入力）</h2>
-<div class="card"><p class="note">音は L／R／A／Y／X の5つ。十字キー左でオカリナを出し、十字キー右で楽譜を確認できます。</p>
-<table>
-<tr><th>曲</th><th>入力</th><th>覚える場所</th></tr>
-<tr><td>ゼルダの子守歌</td><td>Y X A Y X A</td><td>ハイラル城（インパ）</td></tr>
-<tr><td>エポナの歌</td><td>X Y A X Y A</td><td>ロンロン牧場（マロン）</td></tr>
-<tr><td>サリアの歌</td><td>R A Y R A Y</td><td>森の聖域（サリア）</td></tr>
-<tr><td>太陽の歌</td><td>A R X A R X</td><td>カカリコ村の墓地・王家の墓</td></tr>
-<tr><td>時の歌</td><td>A L R A L R</td><td>時のオカリナ入手時</td></tr>
-<tr><td>嵐の歌</td><td>L R X L R X</td><td>カカリコ村の風車小屋</td></tr>
-<tr><td>森のメヌエット</td><td>L X Y A Y A</td><td>森の聖域（シーク）</td></tr>
-<tr><td>炎のボレロ</td><td>R L R L A R A R</td><td>デスマウンテン火口（シーク）</td></tr>
-<tr><td>水のセレナーデ</td><td>L R A A Y</td><td>氷の洞窟（シーク）</td></tr>
-<tr><td>闇のノクターン</td><td>Y A A L Y A R</td><td>カカリコ村（シーク）</td></tr>
-<tr><td>魂のレクイエム</td><td>L R L A R L</td><td>巨大邪神像（シーク）</td></tr>
-<tr><td>光のプレリュード</td><td>X A X A Y X</td><td>時の神殿（シーク）</td></tr>
-<tr><td>カカシの歌</td><td>自分で決めた8音</td><td>ハイリア湖畔のカカシ</td></tr>
-</table></div>
+<h2>🎵 オカリナの曲（きょく）</h2>
+<div class="card"><p style="color:var(--sub);font-size:.9rem">音は L／R／A／Y／X の 5つ。十字キー左で オカリナを 出して、十字キー右で 楽譜（がくふ）が 見れるよ。</p>
+<div class="song"><div class="name">ゼルダの子守歌</div><div class="inp">Y → X → A → Y → X → A</div><div class="place">おぼえる場所：ハイラル城・インパ</div></div><div class="song"><div class="name">エポナの歌</div><div class="inp">X → Y → A → X → Y → A</div><div class="place">おぼえる場所：ロンロン牧場・マロン</div></div><div class="song"><div class="name">サリアの歌</div><div class="inp">R → A → Y → R → A → Y</div><div class="place">おぼえる場所：森の聖域・サリア</div></div><div class="song"><div class="name">太陽の歌</div><div class="inp">A → R → X → A → R → X</div><div class="place">おぼえる場所：カカリコ村のおはか</div></div><div class="song"><div class="name">時の歌</div><div class="inp">A → L → R → A → L → R</div><div class="place">おぼえる場所：時のオカリナを ひろったとき</div></div><div class="song"><div class="name">嵐の歌</div><div class="inp">L → R → X → L → R → X</div><div class="place">おぼえる場所：カカリコ村の風車小屋</div></div><div class="song"><div class="name">森のメヌエット</div><div class="inp">L → X → Y → A → Y → A</div><div class="place">おぼえる場所：森の聖域・シーク</div></div><div class="song"><div class="name">炎のボレロ</div><div class="inp">R → L → R → L → A → R → A → R</div><div class="place">おぼえる場所：デスマウンテン火口・シーク</div></div><div class="song"><div class="name">水のセレナーデ</div><div class="inp">L → R → A → A → Y</div><div class="place">おぼえる場所：氷の洞窟・シーク</div></div><div class="song"><div class="name">闇のノクターン</div><div class="inp">Y → A → A → L → Y → A → R</div><div class="place">おぼえる場所：カカリコ村・シーク</div></div><div class="song"><div class="name">魂のレクイエム</div><div class="inp">L → R → L → A → R → L</div><div class="place">おぼえる場所：巨大邪神像・シーク</div></div><div class="song"><div class="name">光のプレリュード</div><div class="inp">X → A → X → A → Y → X</div><div class="place">おぼえる場所：時の神殿・シーク</div></div><div class="song"><div class="name">カカシの歌</div><div class="inp">じぶんで 決めた 8つの音</div><div class="place">おぼえる場所：ハイリア湖畔のカカシ</div></div></div>
 </section>
 
 <section id="memo">
 <h2>🎁 しらべもの</h2>
-<div class="card"><h3>🧚 大妖精の泉（全6か所・ルピーが必要）</h3>
-<table>
-<tr><th>場所</th><th>ルピー</th><th>もらえるもの</th></tr>
-<tr><td>デスマウンテン登山道（こども）</td><td>25</td><td>ディンの炎＋魔力メーター</td></tr>
-<tr><td>ハイラル城（こども）</td><td>50</td><td>回転斬り（秘技）</td></tr>
-<tr><td>ゾーラの泉（こども）</td><td>100</td><td>フロルの風</td></tr>
-<tr><td>デスマウンテン火口（おとな）</td><td>200</td><td>魔力ゲージ2倍</td></tr>
-<tr><td>巨大邪神像（おとな）</td><td>300</td><td>ネールの愛</td></tr>
-<tr><td>ガノン城の外（おとな）</td><td>500</td><td>防御力2倍</td></tr>
-</table></div>
-<div class="card"><h3>🫙 あきビン（全5個）</h3>
-<ol>
-<li>ハイラル城下町のクスリ屋でムシ捕りイベント（こども・Switch 2版の追加）</li>
-<li>ロンロン牧場のスーパーコッコ当てゲーム（こども）</li>
-<li>カカリコ村でコッコ7羽を柵に戻す（こども）</li>
-<li>ハイリア湖畔の手紙入りビン → キングゾーラに渡す（こども）</li>
-<li>ハイラル平原のビッグポウ5体の魂をゴーストショップへ（おとな）</li>
+<div class="card"><p><b>🧚 大妖精の泉（全6か所・ルピーがいるよ）</b></p><ul>
+<li>デスマウンテン（こども）25ルピー：ディンの炎</li>
+<li>ハイラル城（こども）50ルピー：回転斬り</li>
+<li>ゾーラの泉（こども）100ルピー：フロルの風</li>
+<li>デスマウンテン火口（おとな）200ルピー：魔力2倍</li>
+<li>巨大邪神像（おとな）300ルピー：ネールの愛</li>
+<li>ガノン城のそと（おとな）500ルピー：防御力2倍</li>
+</ul></div>
+<div class="card"><p><b>🫙 あきビン（全5個）</b></p><ol>
+<li>城下町のクスリ屋で ムシとり（こども・Switch 2版で追加）</li>
+<li>ロンロン牧場の コッコ当てゲーム（こども）</li>
+<li>カカリコ村で コッコ7羽を さくに もどす（こども）</li>
+<li>ハイリア湖の 手紙入りビン → キングゾーラに わたす（こども）</li>
+<li>ビッグポウ 5体の たましいを ゴーストショップへ（おとな）</li>
 </ol></div>
-<div class="card"><h3>🕷️ 黄金のスタルチュラのごほうび</h3>
+<div class="card"><p><b>🕷️ 黄金のスタルチュラの ごほうび</b></p>
 <p>10匹：大人のサイフ（500）／ 20匹：ひびき石 ／ 30匹：巨人のサイフ（1000）／ 40匹：ボムチュウ ／ 50匹：ハートのかけら ／ 100匹：金のルピー</p></div>
 </section>
-
 </main>
 <footer>
 <p>非公式のファンガイドです。任天堂および関係各社とは関係ありません。</p>
 <p>攻略情報は2026年11月8日時点の公開情報（任天堂公式・Game8・GameWith・攻略大百科など）をもとにファクトチェックしています。</p>
 </footer>
 <script>
-const KEY="zelda_ocarina_kazoku_v1";
+const KEY="zelda_ocarina_kazoku_v2";
 const boxes=[...document.querySelectorAll('input[type=checkbox][data-k]')];
+const chapters=[...document.querySelectorAll('details.ch')];
 let saved={}; try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+function chapterOf(b){return b.closest('details.ch')}
 function render(){
   let n=0;
   boxes.forEach(b=>{b.checked=!!saved[b.dataset.k]; b.closest('label').classList.toggle('done',b.checked); if(b.checked)n++;});
-  const pct=Math.round(n/boxes.length*100);
+  chapters.forEach(ch=>{
+    const bs=[...ch.querySelectorAll('input[type=checkbox]')];
+    const done=bs.filter(b=>b.checked).length;
+    const el=ch.querySelector('.chprog'); if(el) el.textContent=done+" / "+bs.length;
+  });
+  const pct=boxes.length?Math.round(n/boxes.length*100):0;
   document.getElementById('pct').textContent=n+" / "+boxes.length+" クリア（"+pct+"%）";
   document.getElementById('barfill').style.width=pct+"%";
+  const next=boxes.find(b=>!b.checked);
+  const nt=document.getElementById('nexttxt'), nb=document.getElementById('nextbtn');
+  if(next){
+    nt.innerHTML=next.closest('label').querySelector('span').innerHTML;
+    nb.style.display="block";
+    const ch=chapterOf(next); chapters.forEach(c=>{if(c!==ch)c.removeAttribute('open')}); ch.setAttribute('open','');
+  }else{
+    nt.textContent="ぜんぶ クリア！ ハイラルを すくったね！🎉";
+    nb.style.display="none";
+  }
 }
 boxes.forEach(b=>b.addEventListener('change',()=>{saved[b.dataset.k]=b.checked; localStorage.setItem(KEY,JSON.stringify(saved)); render();}));
+document.getElementById('nextbtn').addEventListener('click',()=>{
+  const next=boxes.find(b=>!b.checked);
+  if(next){saved[next.dataset.k]=true; localStorage.setItem(KEY,JSON.stringify(saved)); render();
+    const nx=boxes.find(b=>!b.checked);
+    if(nx){nx.closest('label').scrollIntoView({behavior:'smooth',block:'center'});}
+    else{document.getElementById('next').scrollIntoView({behavior:'smooth'});}
+  }
+});
 document.getElementById('reset').addEventListener('click',()=>{saved={}; localStorage.removeItem(KEY); render();});
+document.getElementById('szN').addEventListener('click',()=>{document.documentElement.classList.remove('large'); localStorage.setItem(KEY+"_sz","n");});
+document.getElementById('szL').addEventListener('click',()=>{document.documentElement.classList.add('large'); localStorage.setItem(KEY+"_sz","l");});
+if(localStorage.getItem(KEY+"_sz")==="l") document.documentElement.classList.add('large');
 render();
 </script>
 </body>
