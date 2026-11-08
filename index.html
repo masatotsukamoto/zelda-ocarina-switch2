@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ゼルダの伝説 時のオカリナ かぞく攻略 | Switch 2版</title>
+<meta name="description" content="Nintendo Switch 2版『ゼルダの伝説 時のオカリナ』を家族で進めるための攻略ガイド。ファクトチェック済み。">
+<style>
+:root{--bg:#0d1f16;--panel:#14301f;--panel2:#1a3d27;--gold:#e8c766;--ink:#f2ead8;--sub:#b9c9b4;--accent:#7fc97f;--line:#2c5a3a}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
+header{padding:2.2rem 1rem 1.4rem;text-align:center;background:linear-gradient(180deg,#1d4a2a,#0d1f16)}
+header h1{margin:.2rem 0;font-size:1.55rem;color:var(--gold);letter-spacing:.02em}
+header p{margin:.3rem 0;color:var(--sub);font-size:.92rem}
+nav{position:sticky;top:0;background:#0a1a10ee;display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;padding:.55rem .5rem;z-index:10;border-bottom:1px solid var(--line)}
+nav a{color:var(--ink);text-decoration:none;font-size:.85rem;padding:.3rem .7rem;border:1px solid var(--line);border-radius:999px}
+nav a:hover{background:var(--panel2)}
+main{max-width:860px;margin:0 auto;padding:1rem 1rem 3rem}
+section{margin-top:2rem}
+h2{color:var(--gold);font-size:1.2rem;border-bottom:2px solid var(--line);padding-bottom:.3rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;margin:.7rem 0}
+.card h3{margin:.1rem 0 .4rem;font-size:1rem}
+.card p,.card li{font-size:.93rem}
+.tag{display:inline-block;font-size:.72rem;padding:.05rem .5rem;border-radius:999px;background:var(--panel2);color:var(--accent);border:1px solid var(--line);margin-right:.35rem}
+.progress-wrap{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem}
+.bar{height:14px;background:#0a1a10;border-radius:999px;overflow:hidden;border:1px solid var(--line)}
+.bar>div{height:100%;background:linear-gradient(90deg,#4da35f,var(--gold));width:0%;transition:width .3s}
+label.step{display:flex;gap:.6rem;align-items:flex-start;padding:.35rem 0;cursor:pointer;font-size:.95rem}
+label.step input{margin-top:.35rem;width:1.05rem;height:1.05rem;accent-color:#4da35f}
+label.step.done span{color:var(--sub);text-decoration:line-through}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--panel2);color:var(--gold)}
+.note{font-size:.85rem;color:var(--sub)}
+button.reset{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:.4rem .9rem;cursor:pointer}
+footer{text-align:center;color:var(--sub);font-size:.8rem;padding:2rem 1rem}
+</style>
+</head>
+<body>
+<header>
+<div style="font-size:2rem">🗡️</div>
+<h1>ゼルダの伝説 時のオカリナ かぞく攻略</h1>
+<p>2026年11月5日発売 / Nintendo Switch 2 フルリメイク対応</p>
+<p>かぞくみんなで進める おたすけガイド（ファクトチェック済み）</p>
+</header>
+<nav>
+<a href="#next">🧭 つぎはなに？</a>
+<a href="#diff">⚠️ 新旧ちがい</a>
+<a href="#boss">👑 ボス</a>
+<a href="#songs">🎵 曲・ボタン</a>
+<a href="#memo">🎁 しらべもの</a>
+</nav>
+<main>
+
+<section id="next">
+<h2>🧭 つぎはなに？（進みぐあいチェック）</h2>
+<div class="progress-wrap">
+<div style="display:flex;justify-content:space-between;font-size:.9rem"><span>ぼうけん全体の進みぐあい</span><span id="pct">0 / 16 クリア（0%）</span></div>
+<div class="bar"><div id="barfill"></div></div>
+<p class="note">チェックはこのブラウザに保存されます。精霊石3つ（こども時代）→ メダル5つ（おとな時代）→ ガノン城が大まかな流れです。詰まったら −ボタンで「時の軌跡」を確認しましょう。</p>
+</div>
+
+<div class="card"><h3>🌱 こども時代</h3>
+<label class="step"><input type="checkbox" data-k="c1"><span><b>1. コキリの森</b> — 練習場の奥でコキリの剣を取り、40ルピー集めてデクの盾を買う。ミドを通ってデクの樹サマへ</span></label>
+<label class="step"><input type="checkbox" data-k="c2"><span><b>2. デクの樹サマの中</b> — 妖精のパチンコを入手。デクナッツは盾ではね返して出てきたところを剣で斬る。ボス：ゴーマ</span></label>
+<label class="step"><input type="checkbox" data-k="c3"><span><b>3. ハイラル城</b> — マロンのタマゴでタロンを起こし、兵士を避けてゼルダ姫から手紙をもらう。インパが子守歌を教えて城の外へ連れ出してくれる</span></label>
+<label class="step"><input type="checkbox" data-k="c4"><span><b>4. ゴロンシティ〜迷いの森</b> — 門番に手紙を見せてデスマウンテンへ。森の聖域でサリアの歌を覚える（入口でルートが違うので音の大きさが目安）</span></label>
+<label class="step"><input type="checkbox" data-k="c5"><span><b>5. ドドンゴの洞窟</b> — ボム袋を入手。ボス：キングドドンゴ。通常のドドンゴもバクダンを吸わせて倒せる</span></label>
+<label class="step"><input type="checkbox" data-k="c6"><span><b>6. 大妖精の泉（寄り道）</b> — 山頂でディンの炎（25ルピー）、ハイラル城で回転斬り（50ルピー）。64版と順番が逆</span></label>
+<label class="step"><input type="checkbox" data-k="c7"><span><b>7. ゾーラの里</b> — 潜水ゲームでウロコ5枚を拾うと銀のウロコ。湖畔の手紙入りビンを王様に見せ、サカナをビンに入れてジャブジャブ様へ</span></label>
+<label class="step"><input type="checkbox" data-k="c8"><span><b>8. ジャブジャブ様のお腹</b> — ブーメランを入手。ボス：バリネード</span></label>
+<label class="step"><input type="checkbox" data-k="c9"><span><b>9. 時のオカリナ〜おとな時代へ</b> — 城門前で時のオカリナを拾って時の歌を覚え、時の神殿でマスターソードを抜く</span></label>
+</div>
+
+<div class="card"><h3>⚔️ おとな時代</h3>
+<label class="step"><input type="checkbox" data-k="a1"><span><b>10. 森の神殿</b> — 墓地でフックショット、牧場でエポナ、森の聖域でメヌエット。ボス：ファントムガノン。クリア後はベッドから万魔殿へ行ける</span></label>
+<label class="step"><input type="checkbox" data-k="a2"><span><b>11. 炎の神殿</b> — 火口でボレロ。メガトンハンマーを入手。ボス：ヴァルバジア</span></label>
+<label class="step"><input type="checkbox" data-k="a3"><span><b>12. 氷の洞窟〜水の神殿</b> — ヘビィブーツと水のセレナーデ。水位の切り替えが鍵。ボス：モーファ</span></label>
+<label class="step"><input type="checkbox" data-k="a4"><span><b>13. 井戸の底〜闇の神殿</b> — こども時代にまことのメガネを入手し、カカリコ村でノクターンを覚える。ボス：ボンゴボンゴ</span></label>
+<label class="step"><input type="checkbox" data-k="a5"><span><b>14. ゲルドの砦〜魂の神殿の準備</b> — 砦で会員証をもらい、幻影の砂漠を越える。巨大邪神像で魂のレクイエムを覚え、こども時代に戻る</span></label>
+<label class="step"><input type="checkbox" data-k="a6"><span><b>15. 魂の神殿</b> — こども側で銀のグローブ、大人側でミラーシールド（どちらも神殿の中）。ボス：ツインローバ</span></label>
+<label class="step"><input type="checkbox" data-k="a7"><span><b>16. ガノン城・最終決戦</b> — 光の矢を受け取り、城内の闇の結界で黄金のガントレットを入手。ガノンドロフ→ガノンを倒してエンディングへ</span></label>
+</div>
+<button class="reset" id="reset">チェックを全部リセット</button>
+</section>
+
+<section id="diff">
+<h2>⚠️ 新旧ちがい（64版・3DS版と混ざらないように）</h2>
+<div class="card"><ul>
+<li><b>ジャンプはXボタンで手動</b>（自動ジャンプ廃止）。前転からA長押しでダッシュ</li>
+<li>カメラは右スティックで自由に回せる。ブーツやメガネはメニューを開かず切り替え可能</li>
+<li>新要素：時の軌跡（目的地確認）、万魔殿（ボス再戦）、アキンドナッツの実、ひびき石</li>
+<li>最初のサイフは200ルピーまで持てる</li>
+<li>大妖精の泉はルピー支払い制で、もらえる順番も入れ替わりあり（ディンの炎が先）</li>
+<li>あきビンは5個に増加。ビッグポウは5体でビンと交換</li>
+<li>ゾーラの潜水ゲームはルピー拾いではなくウロコ5枚拾い</li>
+<li>夜でもハイラル城下町に入れて、町の中でも時間が流れる</li>
+<li>イベントシーンはフルボイス。オカリナはSwitch 2のマイクで鼻歌でも演奏できる</li>
+</ul></div>
+</section>
+
+<section id="boss">
+<h2>👑 ボス早見表</h2>
+<div class="card"><table>
+<tr><th>ボス</th><th>場所</th><th>倒し方のコツ</th></tr>
+<tr><td>ゴーマ</td><td>デクの樹サマの中</td><td>目が赤くなったらパチンコで落として剣</td></tr>
+<tr><td>キングドドンゴ</td><td>ドドンゴの洞窟</td><td>口を開けたらバクダンを投げ入れて剣</td></tr>
+<tr><td>バリネード</td><td>ジャブジャブ様のお腹</td><td>ブーメランで触手とクラゲを処理し、本体をしびれさせて剣</td></tr>
+<tr><td>ファントムガノン</td><td>森の神殿</td><td>絵から出る本物を弓で。後半は魔法玉を剣で打ち返す</td></tr>
+<tr><td>ヴァルバジア</td><td>炎の神殿</td><td>顔をハンマーで叩いて剣</td></tr>
+<tr><td>モーファ</td><td>水の神殿</td><td>ロングフックで赤い核を引き出して剣</td></tr>
+<tr><td>ボンゴボンゴ</td><td>闇の神殿</td><td>両手を弓でしびれさせ、まことのメガネで目を撃って剣</td></tr>
+<tr><td>ツインローバ</td><td>魂の神殿</td><td>前半は炎と氷を相手同士に反射。後半は同じ属性を3回盾で吸収して返し、落ちたら剣（光の矢は使わない）</td></tr>
+<tr><td>ガノンドロフ／ガノン</td><td>ガノン城</td><td>光の玉を打ち返し、しびれたら光の矢→剣。変身後はしっぽが弱点、最後はマスターソード</td></tr>
+</table>
+<p class="note">中ボスの要点：ダークリンクにはハンマーやディンの炎。アイアンナックは斧を振らせて避け、隙にジャンプ斬り。</p></div>
+</section>
+
+<section id="songs">
+<h2>🎵 オカリナの曲（Switch 2版の入力）</h2>
+<div class="card"><p class="note">音は L／R／A／Y／X の5つ。十字キー左でオカリナを出し、十字キー右で楽譜を確認できます。</p>
+<table>
+<tr><th>曲</th><th>入力</th><th>覚える場所</th></tr>
+<tr><td>ゼルダの子守歌</td><td>Y X A Y X A</td><td>ハイラル城（インパ）</td></tr>
+<tr><td>エポナの歌</td><td>X Y A X Y A</td><td>ロンロン牧場（マロン）</td></tr>
+<tr><td>サリアの歌</td><td>R A Y R A Y</td><td>森の聖域（サリア）</td></tr>
+<tr><td>太陽の歌</td><td>A R X A R X</td><td>カカリコ村の墓地・王家の墓</td></tr>
+<tr><td>時の歌</td><td>A L R A L R</td><td>時のオカリナ入手時</td></tr>
+<tr><td>嵐の歌</td><td>L R X L R X</td><td>カカリコ村の風車小屋</td></tr>
+<tr><td>森のメヌエット</td><td>L X Y A Y A</td><td>森の聖域（シーク）</td></tr>
+<tr><td>炎のボレロ</td><td>R L R L A R A R</td><td>デスマウンテン火口（シーク）</td></tr>
+<tr><td>水のセレナーデ</td><td>L R A A Y</td><td>氷の洞窟（シーク）</td></tr>
+<tr><td>闇のノクターン</td><td>Y A A L Y A R</td><td>カカリコ村（シーク）</td></tr>
+<tr><td>魂のレクイエム</td><td>L R L A R L</td><td>巨大邪神像（シーク）</td></tr>
+<tr><td>光のプレリュード</td><td>X A X A Y X</td><td>時の神殿（シーク）</td></tr>
+<tr><td>カカシの歌</td><td>自分で決めた8音</td><td>ハイリア湖畔のカカシ</td></tr>
+</table></div>
+</section>
+
+<section id="memo">
+<h2>🎁 しらべもの</h2>
+<div class="card"><h3>🧚 大妖精の泉（全6か所・ルピーが必要）</h3>
+<table>
+<tr><th>場所</th><th>ルピー</th><th>もらえるもの</th></tr>
+<tr><td>デスマウンテン登山道（こども）</td><td>25</td><td>ディンの炎＋魔力メーター</td></tr>
+<tr><td>ハイラル城（こども）</td><td>50</td><td>回転斬り（秘技）</td></tr>
+<tr><td>ゾーラの泉（こども）</td><td>100</td><td>フロルの風</td></tr>
+<tr><td>デスマウンテン火口（おとな）</td><td>200</td><td>魔力ゲージ2倍</td></tr>
+<tr><td>巨大邪神像（おとな）</td><td>300</td><td>ネールの愛</td></tr>
+<tr><td>ガノン城の外（おとな）</td><td>500</td><td>防御力2倍</td></tr>
+</table></div>
+<div class="card"><h3>🫙 あきビン（全5個）</h3>
+<ol>
+<li>ハイラル城下町のクスリ屋でムシ捕りイベント（こども・Switch 2版の追加）</li>
+<li>ロンロン牧場のスーパーコッコ当てゲーム（こども）</li>
+<li>カカリコ村でコッコ7羽を柵に戻す（こども）</li>
+<li>ハイリア湖畔の手紙入りビン → キングゾーラに渡す（こども）</li>
+<li>ハイラル平原のビッグポウ5体の魂をゴーストショップへ（おとな）</li>
+</ol></div>
+<div class="card"><h3>🕷️ 黄金のスタルチュラのごほうび</h3>
+<p>10匹：大人のサイフ（500）／ 20匹：ひびき石 ／ 30匹：巨人のサイフ（1000）／ 40匹：ボムチュウ ／ 50匹：ハートのかけら ／ 100匹：金のルピー</p></div>
+</section>
+
+</main>
+<footer>
+<p>非公式のファンガイドです。任天堂および関係各社とは関係ありません。</p>
+<p>攻略情報は2026年11月8日時点の公開情報（任天堂公式・Game8・GameWith・攻略大百科など）をもとにファクトチェックしています。</p>
+</footer>
+<script>
+const KEY="zelda_ocarina_kazoku_v1";
+const boxes=[...document.querySelectorAll('input[type=checkbox][data-k]')];
+let saved={}; try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+function render(){
+  let n=0;
+  boxes.forEach(b=>{b.checked=!!saved[b.dataset.k]; b.closest('label').classList.toggle('done',b.checked); if(b.checked)n++;});
+  const pct=Math.round(n/boxes.length*100);
+  document.getElementById('pct').textContent=n+" / "+boxes.length+" クリア（"+pct+"%）";
+  document.getElementById('barfill').style.width=pct+"%";
+}
+boxes.forEach(b=>b.addEventListener('change',()=>{saved[b.dataset.k]=b.checked; localStorage.setItem(KEY,JSON.stringify(saved)); render();}));
+document.getElementById('reset').addEventListener('click',()=>{saved={}; localStorage.removeItem(KEY); render();});
+render();
+</script>
+</body>
+</html>
